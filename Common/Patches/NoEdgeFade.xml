@@ -52,22 +52,22 @@
       <!-- remove edgeType node to set to the default Hard edgeType -->
       <!-- Leave Water and Marsh tiles alone or they'll look funky -->
       <li Class="PatchOperationRemove">
-          <xpath>Defs/TerrainDef[
-              defName = "BurnedWoodPlankFloor" or
-              defName = "BurnedCarpet" or
-              defName = "BrokenAsphalt" or
-              defName = "PackedDirt" or
-              defName = "SoftSand" or
-              defName = "Ice" or
-              defName = "Sand" or
-              defName = "Soil" or
-              defName = "MarshyTerrain" or
-              defName = "SoilRich" or
-              defName = "Mud" or
-              defName = "Gravel" or
-              defName = "MossyTerrain"
-              ]/edgeType
-          </xpath>
+        <xpath>Defs/TerrainDef[
+          defName = "BurnedWoodPlankFloor" or
+          defName = "BurnedCarpet" or
+          defName = "BrokenAsphalt" or
+          defName = "PackedDirt" or
+          defName = "SoftSand" or
+          defName = "Ice" or
+          defName = "Sand" or
+          defName = "Soil" or
+          defName = "MarshyTerrain" or
+          defName = "SoilRich" or
+          defName = "Mud" or
+          defName = "Gravel" or
+          defName = "MossyTerrain"
+          ]/edgeType
+        </xpath>
       </li>
 
     </operations>
@@ -90,13 +90,13 @@
         <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "RockySoil"]/renderPrecedence</xpath>               <value><renderPrecedence>220</renderPrecedence></value></li>
 
         <li Class="PatchOperationRemove">
-            <xpath>Defs/TerrainDef[
-                defName = "RockySoil" or
-                defName = "Topsoil" or
-                defName = "DirtFert" or
-                defName = "SoilTilled"
-                ]/edgeType
-            </xpath>
+          <xpath>Defs/TerrainDef[
+            defName = "RockySoil" or
+            defName = "Topsoil" or
+            defName = "DirtFert" or
+            defName = "SoilTilled"
+            ]/edgeType
+          </xpath>
         </li>
 
       </operations>
@@ -124,17 +124,17 @@
         <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "SoilWorn"]/renderPrecedence</xpath>                <value><renderPrecedence>200</renderPrecedence></value></li>
 
         <li Class="PatchOperationRemove">
-            <xpath>Defs/TerrainDef[
-                defName = "RockySoil" or
-                defName = "TrenchShallow" or
-                defName = "TrenchMuddy" or
-                defName = "TrenchDeep" or
-                defName = "Topsoil" or
-                defName = "DirtFert" or
-                defName = "SoilTilled" or
-                defName = "SoilWorn"
-                ]/edgeType
-            </xpath>
+          <xpath>Defs/TerrainDef[
+            defName = "RockySoil" or
+            defName = "TrenchShallow" or
+            defName = "TrenchMuddy" or
+            defName = "TrenchDeep" or
+            defName = "Topsoil" or
+            defName = "DirtFert" or
+            defName = "SoilTilled" or
+            defName = "SoilWorn"
+            ]/edgeType
+          </xpath>
         </li>
 
       </operations>
@@ -208,12 +208,12 @@
         <!-- <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorStraw"]/renderPrecedence</xpath>              <value><renderPrecedence>254</renderPrecedence></value></li> -->
 
         <li Class="PatchOperationRemove">
-            <xpath>Defs/TerrainDef[
-                defName = "BurnedStrawFloor" or
-                defName = "FloorStraw" or
-                defName = "FloorWoodBarn"
-                ]/edgeType
-            </xpath>
+          <xpath>Defs/TerrainDef[
+            defName = "BurnedStrawFloor" or
+            defName = "FloorStraw" or
+            defName = "FloorWoodBarn"
+            ]/edgeType
+          </xpath>
         </li>
 
       </operations>
@@ -235,14 +235,14 @@
         <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "sandPath"]/renderPrecedence</xpath>                <value><renderPrecedence>249</renderPrecedence></value></li>
 
         <li Class="PatchOperationRemove">
-            <xpath>Defs/TerrainDef[
-                @Name = "pathBase" or
-                defName = "dirtPathLight" or
-                defName = "gravelPath" or
-                defName = "gravelPathLight" or
-                defName = "sandPath"
-                ]/edgeType
-            </xpath>
+          <xpath>Defs/TerrainDef[
+            @Name = "pathBase" or
+            defName = "dirtPathLight" or
+            defName = "gravelPath" or
+            defName = "gravelPathLight" or
+            defName = "sandPath"
+            ]/edgeType
+          </xpath>
         </li>
 
       </operations>
@@ -259,7 +259,7 @@
       <operations>
 
         <li Class="PatchOperationReplace">
-            <xpath>Defs/StuffedFloors.FloorTypeDef[@Name = "StuffedFloorsBase"]/renderPrecedence</xpath>                       <value><renderPrecedence>301</renderPrecedence></value>
+          <xpath>Defs/StuffedFloors.FloorTypeDef[@Name = "StuffedFloorsBase"]/renderPrecedence</xpath>                       <value><renderPrecedence>301</renderPrecedence></value>
         </li>
 
       </operations>
@@ -350,6 +350,22 @@
           defName = "GreenTile" or
           defName = "PurpleTile"
           ]/renderPrecedence</xpath><value><renderPrecedence>380</renderPrecedence></value></li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!-- ========== Patch for spdskatr.projectrimfactory ========== -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Project RimFactory Revived</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "StripedTile"]/renderPrecedence</xpath>             <value><renderPrecedence>380</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "StripedTileLeft"]/renderPrecedence</xpath>         <value><renderPrecedence>380</renderPrecedence></value></li>
 
       </operations>
     </match>
