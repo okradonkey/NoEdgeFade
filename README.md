@@ -9,7 +9,7 @@ If you only want man-made terrain borders to be crisp, check out the
 No Edge Fade - Lite mod.
 
 ### Compatibility
-- Compatible with RimWorld **v1.0**, **v1.1**, and the **Royalty** DLC.
+- Compatible with RimWorld **v1.0**, **v1.1**, **v1.2**, and the **Royalty** DLC.
 - No game-breaking incompatibilities, **BUT...**
 
 This mod drastically re-orders the rendering precedence of terrains.
