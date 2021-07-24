@@ -10,7 +10,8 @@ No Edge Fade - Lite mod.
 
 ### Compatibility
 - Compatible with RimWorld **v1.0**, **v1.1**, **v1.2**, and the **Royalty** DLC.
-- Might be compatible with **v1.3**, but I haven't tested it much
+- Might be compatible with **v1.3** and the **Ideology** DLC, but I haven't
+  tested it much
 - This mod hasn't been updated in a while, so there are probably bugs
 - If you find any bugs, please let me know and I'll try to keep up
 - There probably aren't any game-breaking incompatibilities, **BUT...**
